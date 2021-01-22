@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/aboutus', function (){
-    return view('aboutus');
-});
+Route::get('/aboutus', 'PagesController@indexaboutus' );
 
-Route::get('/contactus', function (){
-    return view('contactus');
-});
+Route::get('/contactus', 'PagesController@indexcontactus');
